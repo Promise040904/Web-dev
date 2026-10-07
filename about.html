@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About | Golden Crust Bakery</title>
+  <meta name="description" content="The story, values and team behind Golden Crust Bakery.">
+  <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Fraunces:opsz,wght@9..144,600;9..144,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <a class="logo" href="index.html">
+      <img src="images/logo.svg" alt="Golden Crust Bakery, go to home page" width="48" height="48">
+      <span>Golden Crust</span>
+    </a>
+
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="main-nav">&#9776;</button>
+
+    <nav id="main-nav" class="main-nav" aria-label="Main">
+      <ul>
+        <li><a href="index.html" data-i18n="nav-home">Home</a></li>
+        <li><a href="about.html" class="active" data-i18n="nav-about">About</a></li>
+        <li class="has-dropdown">
+          <a href="menu.html" data-i18n="nav-menu">Menu</a>
+          <ul class="dropdown">
+            <li><a href="menu.html#breads">Breads</a></li>
+            <li><a href="menu.html#cakes">Cakes</a></li>
+            <li><a href="menu.html#pastries">Pastries</a></li>
+          </ul>
+        </li>
+        <li><a href="gallery.html" data-i18n="nav-gallery">Gallery</a></li>
+        <li><a href="contact.html" data-i18n="nav-contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <button class="lang-toggle" id="lang-toggle" type="button">Sepedi</button>
+  </header>
+
+  <main>
+    <div class="page-banner">
+      <h1>About Golden Crust</h1>
+      <p>A neighbourhood bakery, started in one small oven.</p>
+    </div>
+
+    <section class="section split">
+      <div class="prose">
+        <h2>Our story</h2>
+        <p>Golden Crust started in 2018 with one oven and one sourdough starter. We wanted bread that tastes like bread, made without shortcuts or long ingredient lists.</p>
+        <p>Today we still bake in small batches every morning, and we still use the same starter.</p>
+        <h2>What we care about</h2>
+        <ul>
+          <li><strong>Simple ingredients:</strong> flour, water, salt, yeast, and nothing you can't pronounce.</li>
+          <li><strong>Local suppliers:</strong> we buy our flour and eggs from farms close to the bakery.</li>
+          <li><strong>Fair prices:</strong> good bread shouldn't be a treat.</li>
+        </ul>
+      </div>
+      <figure class="card">
+        <img src="images/baker.jpg" alt="Head baker shaping dough on a floured table" width="800" height="600" loading="lazy">
+        <figcaption>Our head baker shaping loaves before sunrise.</figcaption>
+      </figure>
+    </section>
+
+    <section class="section">
+      <h2>Meet the team</h2>
+      <table class="menu-table">
+        <caption class="visually-hidden">Bakery team</caption>
+        <thead><tr><th scope="col">Name</th><th scope="col">Role</th><th scope="col">Favourite bake</th></tr></thead>
+        <tbody>
+          <tr><td>Thabo</td><td>Head baker</td><td>Seeded rye</td></tr>
+          <tr><td>Lerato</td><td>Pastry chef</td><td>Croissants</td></tr>
+          <tr><td>Sipho</td><td>Front of house</td><td>Cheese scones</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="section">
+      <h2>See us at work</h2>
+      <div class="video-wrap">
+        <video controls preload="metadata" poster="images/gallery-1.jpg" width="960" height="540">
+          <source src="videos/baking-intro.mp4" type="video/mp4">
+          Your browser does not support video.
+        </video>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div>
+        <h2>Golden Crust Bakery</h2>
+        <address>
+          12 Baker Street<br>
+          Johannesburg, 2000
+        </address>
+        <p><a href="tel:+27115550123">011 555 0123</a></p>
+      </div>
+      <div>
+        <h2>Follow us</h2>
+        <ul>
+          <li><a href="https://www.facebook.com" target="_blank" rel="noopener">Facebook</a></li>
+          <li><a href="https://www.instagram.com" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="https://www.tiktok.com" target="_blank" rel="noopener">TikTok</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="copyright">&copy; 2026 Golden Crust Bakery. All rights reserved.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

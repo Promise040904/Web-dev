@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Menu | Golden Crust Bakery</title>
+  <meta name="description" content="Breads, cakes and pastries baked fresh daily at Golden Crust Bakery.">
+  <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Fraunces:opsz,wght@9..144,600;9..144,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <a class="logo" href="index.html">
+      <img src="images/logo.svg" alt="Golden Crust Bakery, go to home page" width="48" height="48">
+      <span>Golden Crust</span>
+    </a>
+
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="main-nav">&#9776;</button>
+
+    <nav id="main-nav" class="main-nav" aria-label="Main">
+      <ul>
+        <li><a href="index.html" data-i18n="nav-home">Home</a></li>
+        <li><a href="about.html" data-i18n="nav-about">About</a></li>
+        <li class="has-dropdown">
+          <a href="menu.html" class="active" data-i18n="nav-menu">Menu</a>
+          <ul class="dropdown">
+            <li><a href="menu.html#breads">Breads</a></li>
+            <li><a href="menu.html#cakes">Cakes</a></li>
+            <li><a href="menu.html#pastries">Pastries</a></li>
+          </ul>
+        </li>
+        <li><a href="gallery.html" data-i18n="nav-gallery">Gallery</a></li>
+        <li><a href="contact.html" data-i18n="nav-contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <button class="lang-toggle" id="lang-toggle" type="button">Sepedi</button>
+  </header>
+
+  <main>
+    <div class="page-banner">
+      <h1>Our menu</h1>
+      <p>Baked fresh every morning. When it's gone, it's gone.</p>
+    </div>
+    <section class="section" id="breads">
+      <h2>Breads</h2>
+      <table class="menu-table">
+        <caption class="visually-hidden">Breads and prices</caption>
+        <thead><tr><th scope="col">Item</th><th scope="col">What's in it</th><th scope="col">Price</th></tr></thead>
+        <tbody>
+          <tr><td>Country sourdough</td><td>24-hour rise, crisp crust</td><td>R55</td></tr>
+          <tr><td>Seeded rye</td><td>Sunflower, flax and pumpkin seeds</td><td>R48</td></tr>
+          <tr><td>White tin loaf</td><td>Soft, good for sandwiches</td><td>R25</td></tr>
+          <tr><td>Wholewheat loaf</td><td>Stoneground flour, honey</td><td>R32</td></tr>
+        </tbody>
+      </table>
+    </section>
+    <section class="section" id="cakes">
+      <h2>Cakes</h2>
+      <table class="menu-table">
+        <caption class="visually-hidden">Cakes and prices</caption>
+        <thead><tr><th scope="col">Item</th><th scope="col">What's in it</th><th scope="col">Price</th></tr></thead>
+        <tbody>
+          <tr><td>Carrot cake (slice)</td><td>Cream cheese icing, walnuts</td><td>R42</td></tr>
+          <tr><td>Chocolate fudge cake (slice)</td><td>Dark chocolate ganache</td><td>R45</td></tr>
+          <tr><td>Lemon drizzle loaf</td><td>Fresh lemon, sugar glaze</td><td>R120</td></tr>
+        </tbody>
+      </table>
+    </section>
+    <section class="section" id="pastries">
+      <h2>Pastries</h2>
+      <table class="menu-table">
+        <caption class="visually-hidden">Pastries and prices</caption>
+        <thead><tr><th scope="col">Item</th><th scope="col">What's in it</th><th scope="col">Price</th></tr></thead>
+        <tbody>
+          <tr><td>Butter croissant</td><td>Flaky, laminated dough</td><td>R28</td></tr>
+          <tr><td>Cheese scone</td><td>Mature cheddar, served warm</td><td>R22</td></tr>
+          <tr><td>Cinnamon swirl</td><td>Brown sugar and cinnamon</td><td>R30</td></tr>
+        </tbody>
+      </table>
+    </section>
+    <section class="section">
+      <h2>Before you order</h2>
+      <ul>
+        <li>Everything contains gluten.</li>
+        <li>Some items contain nuts, eggs and dairy. Ask us if you have an allergy.</li>
+        <li>You can order whole cakes 48 hours ahead through the <a href="contact.html">contact page</a>.</li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div>
+        <h2>Golden Crust Bakery</h2>
+        <address>
+          12 Baker Street<br>
+          Johannesburg, 2000
+        </address>
+        <p><a href="tel:+27115550123">011 555 0123</a></p>
+      </div>
+      <div>
+        <h2>Follow us</h2>
+        <ul>
+          <li><a href="https://www.facebook.com" target="_blank" rel="noopener">Facebook</a></li>
+          <li><a href="https://www.instagram.com" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="https://www.tiktok.com" target="_blank" rel="noopener">TikTok</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="copyright">&copy; 2026 Golden Crust Bakery. All rights reserved.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

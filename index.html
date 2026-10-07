@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Golden Crust Bakery | Fresh bread baked daily</title>
+  <meta name="description" content="Golden Crust Bakery bakes fresh bread, cakes and pastries every morning.">
+  <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Fraunces:opsz,wght@9..144,600;9..144,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <a class="logo" href="index.html">
+      <img src="images/logo.svg" alt="Golden Crust Bakery, go to home page" width="48" height="48">
+      <span>Golden Crust</span>
+    </a>
+
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="main-nav">&#9776;</button>
+
+    <nav id="main-nav" class="main-nav" aria-label="Main">
+      <ul>
+        <li><a href="index.html" class="active" data-i18n="nav-home">Home</a></li>
+        <li><a href="about.html" data-i18n="nav-about">About</a></li>
+        <li class="has-dropdown">
+          <a href="menu.html" data-i18n="nav-menu">Menu</a>
+          <ul class="dropdown">
+            <li><a href="menu.html#breads">Breads</a></li>
+            <li><a href="menu.html#cakes">Cakes</a></li>
+            <li><a href="menu.html#pastries">Pastries</a></li>
+          </ul>
+        </li>
+        <li><a href="gallery.html" data-i18n="nav-gallery">Gallery</a></li>
+        <li><a href="contact.html" data-i18n="nav-contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <button class="lang-toggle" id="lang-toggle" type="button">Sepedi</button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <img src="images/hero-bread.jpg" alt="Freshly baked loaves cooling on a wooden rack" width="1600" height="800">
+      <div class="hero-text">
+        <h1 data-i18n="hero-title">Bread that was dough this morning</h1>
+        <p data-i18n="hero-sub">We bake in small batches from 4 a.m., so what you buy is still warm.</p>
+        <a class="btn" href="menu.html" data-i18n="hero-btn">See what's baking</a>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Fresh from the oven</h2>
+      <div class="card-grid">
+        <figure class="card">
+          <img src="images/sourdough.jpg" alt="Round sourdough loaf with a crisp crust" width="800" height="600" loading="lazy">
+          <figcaption>
+            <h3>Country sourdough</h3>
+            <p>Slow-risen for 24 hours. R55</p>
+          </figcaption>
+        </figure>
+        <figure class="card">
+          <img src="images/croissant.jpg" alt="Golden butter croissants on a tray" width="800" height="600" loading="lazy">
+          <figcaption>
+            <h3>Butter croissant</h3>
+            <p>Flaky, layered, baked at dawn. R28</p>
+          </figcaption>
+        </figure>
+        <figure class="card">
+          <img src="images/carrot-cake.jpg" alt="Slice of carrot cake with cream cheese icing" width="800" height="600" loading="lazy">
+          <figcaption>
+            <h3>Carrot cake slice</h3>
+            <p>Cream cheese icing, toasted walnuts. R42</p>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section split">
+      <div>
+        <h2>Opening hours</h2>
+        <p id="open-status" class="status" aria-live="polite"></p>
+        <table class="hours">
+          <caption class="visually-hidden">Opening hours</caption>
+          <thead>
+            <tr><th scope="col">Day</th><th scope="col">Hours</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Monday to Friday</td><td>06:30 &ndash; 17:00</td></tr>
+            <tr><td>Saturday</td><td>07:00 &ndash; 14:00</td></tr>
+            <tr><td>Sunday</td><td>Closed</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div>
+        <h2>What customers say</h2>
+        <blockquote>
+          <p>The sourdough is gone by 10 a.m. every Saturday, so I get there early.</p>
+          <footer>Naledi M., regular customer</footer>
+        </blockquote>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>For home bakers</h2>
+      <ul class="link-list">
+        <li><a href="https://www.kingarthurbaking.com/learn" target="_blank" rel="noopener">King Arthur Baking: guides and techniques</a></li>
+        <li><a href="https://www.bbcgoodfood.com/recipes/collection/bread-recipes" target="_blank" rel="noopener">BBC Good Food: bread recipes</a></li>
+        <li><a href="https://www.sabakers.co.za" target="_blank" rel="noopener">Southern African Bakers' association</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div>
+        <h2>Golden Crust Bakery</h2>
+        <address>
+          12 Baker Street<br>
+          Johannesburg, 2000
+        </address>
+        <p><a href="tel:+27115550123">011 555 0123</a></p>
+      </div>
+      <div>
+        <h2>Follow us</h2>
+        <ul>
+          <li><a href="https://www.facebook.com" target="_blank" rel="noopener">Facebook</a></li>
+          <li><a href="https://www.instagram.com" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="https://www.tiktok.com" target="_blank" rel="noopener">TikTok</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="copyright">&copy; 2026 Golden Crust Bakery. All rights reserved.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

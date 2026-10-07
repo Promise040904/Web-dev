@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact | Golden Crust Bakery</title>
+  <meta name="description" content="Get in touch with Golden Crust Bakery or find our opening hours and address.">
+  <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Fraunces:opsz,wght@9..144,600;9..144,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <a class="logo" href="index.html">
+      <img src="images/logo.svg" alt="Golden Crust Bakery, go to home page" width="48" height="48">
+      <span>Golden Crust</span>
+    </a>
+
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="main-nav">&#9776;</button>
+
+    <nav id="main-nav" class="main-nav" aria-label="Main">
+      <ul>
+        <li><a href="index.html" data-i18n="nav-home">Home</a></li>
+        <li><a href="about.html" data-i18n="nav-about">About</a></li>
+        <li class="has-dropdown">
+          <a href="menu.html" data-i18n="nav-menu">Menu</a>
+          <ul class="dropdown">
+            <li><a href="menu.html#breads">Breads</a></li>
+            <li><a href="menu.html#cakes">Cakes</a></li>
+            <li><a href="menu.html#pastries">Pastries</a></li>
+          </ul>
+        </li>
+        <li><a href="gallery.html" data-i18n="nav-gallery">Gallery</a></li>
+        <li><a href="contact.html" class="active" data-i18n="nav-contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <button class="lang-toggle" id="lang-toggle" type="button">Sepedi</button>
+  </header>
+
+  <main>
+    <div class="page-banner">
+      <h1>Contact us</h1>
+      <p>Questions, cake orders or a hello. We read everything.</p>
+    </div>
+
+    <section class="section split">
+      <div>
+        <h2>Send a message</h2>
+        <form id="contact-form" action="contact.php" method="post" novalidate>
+          <div class="field">
+            <label for="name">Your name</label>
+            <input type="text" id="name" name="name" autocomplete="name" required>
+            <span class="error" id="name-error" aria-live="polite"></span>
+          </div>
+          <div class="field">
+            <label for="email">Email address</label>
+            <input type="email" id="email" name="email" autocomplete="email" required>
+            <span class="error" id="email-error" aria-live="polite"></span>
+          </div>
+          <div class="field">
+            <label for="subject">What is this about?</label>
+            <select id="subject" name="subject">
+              <option>General question</option>
+              <option>Cake order</option>
+              <option>Catering</option>
+              <option>Feedback</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            <span class="error" id="message-error" aria-live="polite"></span>
+          </div>
+          <button type="submit" class="btn">Send message</button>
+        </form>
+      </div>
+
+      <div>
+        <h2>Visit us</h2>
+        <address>
+          12 Baker Street<br>
+          Johannesburg, 2000<br>
+          <a href="tel:+27115550123">011 555 0123</a>
+        </address>
+        <p>Monday to Friday 06:30 &ndash; 17:00<br>Saturday 07:00 &ndash; 14:00<br>Closed on Sundays</p>
+        <div class="map-wrap">
+          <iframe title="Map showing Golden Crust Bakery location" src="https://www.google.com/maps?q=Johannesburg+2000&amp;output=embed" width="600" height="320" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div>
+        <h2>Golden Crust Bakery</h2>
+        <address>
+          12 Baker Street<br>
+          Johannesburg, 2000
+        </address>
+        <p><a href="tel:+27115550123">011 555 0123</a></p>
+      </div>
+      <div>
+        <h2>Follow us</h2>
+        <ul>
+          <li><a href="https://www.facebook.com" target="_blank" rel="noopener">Facebook</a></li>
+          <li><a href="https://www.instagram.com" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="https://www.tiktok.com" target="_blank" rel="noopener">TikTok</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="copyright">&copy; 2026 Golden Crust Bakery. All rights reserved.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
